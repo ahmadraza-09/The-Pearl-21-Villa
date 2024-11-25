@@ -7,193 +7,102 @@ const PlacesToVisit = () => {
   const navigate = useNavigate();
   return (
     <>
-    {/* <section className="places-to-visit-section">
+    <section className="places-to-visit-section">
       <h1 className="swipe">Places To Visit</h1>
       <br />
       <div className="places-to-visit-container">
         <div className="places-to-visit-card places-to-visit-card1 swipe">
           <div className="places-to-visit-card-content">
-            <h2>TIHRI DAM</h2>
+            <h2>UDAI SAGAR LAKE</h2>
             <p>
-            Tihri is a vibrant town known for its picturesque landscapes and rich cultural heritage. Nestled in the foothills of the Himalayas, it boasts serene lakes, lush forests, and historic temples. Visitors can enjoy trekking, boating, and exploring traditional markets. Tihri offers a perfect blend of natural beauty and cultural charm, making it an ideal destination for nature lovers and history enthusiasts alike.
+            Udai Sagar Lake, one of the five prominent lakes of Udaipur, is situated around 13 km in the east of Udaipur. This lake was built by Maharana Udai Singh in 1565. Udai Sagar Lake is around 4 km in length, 2.5 km in width and 9 meters deep at the maximum. It is fed by the Ahar River. 
             </p>
           </div>
         </div>
         <div className="places-to-visit-card places-to-visit-card2 swipe">
           <div className="places-to-visit-card-content">
-            <h2>MAA SURKANDA DEVI TEMPLE</h2>
+            <h2>SWAROOP SAGAR LAKE</h2>
             <p>
-            The Maa Surkanda Devi Temple, located near Dhanaulti in Uttarakhand, India, is a revered Hindu shrine dedicated to Goddess Surkanda. Perched at an altitude of 2,757 meters, it offers panoramic views of the surrounding Himalayan peaks. The temple, accessible via a scenic trek, is a significant pilgrimage site, attracting devotees and tourists seeking spiritual solace and natural beauty.
+            Swaroop Sagar Lake is situated in the city of Udaipur in the Rajasthan state of India. It is an artificially created lake, named after Maharana Swarup Singh of Udaipur. It is also known as Kumharia Talab, which is a combined water body comprising other nearby lakes Fateh Sagar Lake and Lake Pichola.
             </p>
           </div>
         </div>
         <div className="places-to-visit-card places-to-visit-card3 swipe">
           <div className="places-to-visit-card-content">
-            <h2>MAA KUNJAPURI TEMPLE</h2>
+            <h2>SAJJANGARH BIOLOGICAL PARK</h2>
             <p>
-            The Maa Kunjapuri Temple, situated in the Tehri Garhwal district of Uttarakhand, India, is a sacred Hindu site dedicated to Goddess Kunjapuri. Positioned at an elevation of 1,676 meters, the temple provides breathtaking views of the snow-capped Himalayas and the Ganga River. It is a popular pilgrimage destination, known for its spiritual significance, serene ambiance, and stunning sunrises.
+            Sajjangarh Biological Park is a zoological garden located in Udaipur, Rajasthan, India. This biological park is situated just beneath the Monsoon Palace, around 4 km from the city center.
             </p>
           </div>
         </div>
         <div className="places-to-visit-card places-to-visit-card4 swipe">
           <div className="places-to-visit-card-content">
-            <h2>ECO PARK</h2>
+            <h2>MONSOON PALACE</h2>
             <p>
-            Eco Park in Dhanaulti, Uttarakhand, is a serene and picturesque destination nestled in the Garhwal Himalayas. Comprising two separate parks, Amber and Dhara, it features lush deodar forests, well-maintained gardens, and scenic walking trails. Visitors can enjoy nature walks, bird watching, and adventure activities like zip-lining. The park is perfect for those seeking tranquility and a close connection with nature.
+            The Monsoon Palace, also known as the Sajjan Garh Palace, is a hilltop palatial residence in the city of Udaipur, Rajasthan in India, overlooking the Fateh Sagar Lake. It is named Sajjangarh after Maharana Sajjan Singh of the Mewar dynasty, whom it was built for in 1884.
             </p>
           </div>
         </div>
         <div className="places-to-visit-card places-to-visit-card5 swipe">
           <div className="places-to-visit-card-content">
-            <h2>DEHRADUN</h2>
+            <h2>BADI LAKE</h2>
             <p>
-            Dehradun, the capital city of Uttarakhand, India, is renowned for its scenic beauty, pleasant climate, and rich cultural heritage. Nestled in the Doon Valley between the Ganges and Yamuna rivers, it offers a blend of natural landscapes and urban amenities. Key attractions include the Forest Research Institute, Robber's Cave, and Tapkeshwar Temple. Dehradun serves as a gateway to the hill stations of Mussoorie and the pilgrimage sites of Haridwar and Rishikesh.
+            Lake Badi is an artificial freshwater lake situated in Udaipur city in the Indian state of Rajasthan. The lake was built in the village of Badi, about 12 km from Udaipur, by Maharana Raj Singh I to counteract the devastating effects of a famine. He named it Jiyan Sagar after his mother Jana Devi.
             </p>
           </div>
         </div>
         <div className="places-to-visit-card places-to-visit-card6 swipe">
           <div className="places-to-visit-card-content">
-            <h2>DASHAVATAR TEMPLE</h2>
+            <h2>LAKE PICHOLA</h2>
             <p>
-            This ancient temple, dedicated to Lord Vishnu, is a hidden gem near Dhanaulti, dating back to the Gupta period. The Dashavatar Temple is renowned for its intricate carvings and sculptures that depict various scenes from Hindu mythology. The temple is an architectural marvel, showcasing the artistry of the time. Although it is not as frequently visited as other sites, it offers a peaceful and spiritual experience for those interested in history and culture.
+            Lake Pichola, situated in Udaipur city in the Indian state of Rajasthan, is an artificial fresh water lake, created in the year 1362, named after the nearby Picholi village. It is one of the several contiguous lakes, and developed over the last few centuries in and around the famous Udaipur city.
             </p>
           </div>
         </div>
         <div className="places-to-visit-card places-to-visit-card7 swipe">
           <div className="places-to-visit-card-content">
-            <h2>DHANAULTI ADVENTURE PARK</h2>
+            <h2>JAGDISH TEMPLE</h2>
             <p>
-            For those seeking adventure, Dhanaulti Adventure Park is the place to be. This park offers a variety of adrenaline-pumping activities such as zip-lining, rappelling, rock climbing, and sky walking. Set amidst the natural beauty of Dhanaulti, the park provides a thrilling experience with a backdrop of dense forests and snow-capped mountains. It's an ideal spot for adventure enthusiasts and families looking to add some excitement to their trip.
+            Jagdish Temple is a large Hindu temple in the middle of Udaipur in Rajasthan, just outside the royal palace. It has been in continuous worship since 1651. A big tourist attraction, the temple was originally called the temple of Jagannath Rai but is now called Jagdish-ji. It is a major monument in Udaipur.
             </p>
           </div>
         </div>
         <div className="places-to-visit-card places-to-visit-card8 swipe">
           <div className="places-to-visit-card-content">
-            <h2>DEOGARH FORT</h2>
+            <h2>FATEH SAGAR LAKE</h2>
             <p>
-            Located a short drive from Dhanaulti, Deogarh Fort is a historical site that offers a glimpse into the region's rich past. The fort dates back to the 16th century and is adorned with exquisite murals, intricate carvings, and ornate Jain temples within its complex. Though in ruins, the fort's architecture and art still reflect the grandeur of its time. The fort is perched on a hill, offering panoramic views of the surrounding landscape, making it a must-visit for history buffs and photographers.
+            Fateh Sagar Lake is situated in the city of Udaipur in the Indian state of Rajasthan. It is an artificial lake named after Maharana Fateh Singh of Udaipur and Mewar, constructed north-west of Udaipur, to the north of Lake Pichola in the 1680s.
             </p>
           </div>
         </div>
         <div className="places-to-visit-card places-to-visit-card9 swipe">
           <div className="places-to-visit-card-content">
-            <h2>KAUDIA FOREST</h2>
+            <h2>DOODH TALAI LAKE</h2>
             <p>
-            Kaudia Forest is a nature lover's paradise, offering a tranquil environment with lush greenery and a rich variety of flora and fauna. The forest is known for its dense oak and pine trees, creating a perfect setting for a peaceful hike or a leisurely walk. The trails in the forest lead to stunning viewpoints that offer breathtaking views of the Himalayan peaks. Kaudia Forest is also a haven for bird watchers, as it is home to several species of birds. It's an ideal spot for those looking to connect with nature and escape the hustle and bustle of city life.
+            Doodh Talai Lake or Dudh Talai lake, is a small pond located adjacent to the Lake Pichola, near Shiva Niwas Palace, in the heart of Udaipur, Rajasthan.
             </p>
           </div>
         </div>
         <div className="places-to-visit-card places-to-visit-card10 swipe">
           <div className="places-to-visit-card-content">
-            <h2>CHAMBA</h2>
+            <h2>CITY PALACE</h2>
             <p>
-            Situated around 30 km from Dhanaulti, Chamba is a small town known for its scenic beauty and pleasant climate. The town is surrounded by dense forests and offers stunning views of the Bhagirathi River and the Garhwal Himalayas. Chamba is also famous for its apple orchards and the Tehri Dam, which is a great spot for picnics. It’s an ideal place for those looking to explore more of the region’s natural beaut
+            City Palace, Udaipur is a palace complex situated in the city of Udaipur in the Indian state of Rajasthan. It was built over a period of nearly 400 years, with contributions from several rulers of the Mewar dynasty.
             </p>
           </div>
         </div>
         <div className="places-to-visit-card places-to-visit-card11 swipe">
           <div className="places-to-visit-card-content">
-            <h2>KANATAL</h2>
+            <h2>BAGORE KI HAVELI</h2>
             <p>
-            Just 16 km from Dhanaulti, Kanatal is a quaint hill station that remains relatively untouched by commercialization. Known for its tranquil ambiance and scenic landscapes, Kanatal is perfect for those looking for a peaceful retreat. The area is surrounded by dense forests of pine, deodar, and rhododendron, making it ideal for nature walks, trekking, and camping. The Surkanda Devi Temple is also located nearby, adding a spiritual touch to the visit.
+            Bagore-ki-Haveli is a haveli in Udaipur in Rajasthan state in India. It is right on the waterfront of Lake Pichola at Gangori Ghat. Amar Chand Badwa, the Prime Minister of Mewar, built it in the eighteenth century.
             </p>
           </div>
         </div>
-        <div className="places-to-visit-card places-to-visit-card12 swipe">
-          <div className="places-to-visit-card-content">
-            <h2>MATATLA DAM</h2>
-            <p>
-            Situated around 70 km from Dhanaulti, the Matatila Dam is a popular tourist spot known for its serene environment and picturesque surroundings. The dam is built on the Betwa River and serves as a great spot for picnics, boating, and fishing. The area around the dam is well-maintained, with lush gardens and walking paths, making it a relaxing spot for families and nature lovers.
-            </p>
-          </div>
-        </div>
-        <div className="places-to-visit-card places-to-visit-card13 swipe">
-          <div className="places-to-visit-card-content">
-            <h2>KEMPTY FALLS</h2>
-            <p>
-            Located around 45 km from Dhanaulti, Kempty Falls is one of the most famous waterfalls in Uttarakhand. The water cascades down from a height of 40 feet, creating a mesmerizing sight. The falls are a popular tourist attraction, and visitors can enjoy swimming and bathing in the pool at the base of the falls. The surrounding area is dotted with small shops and eateries, making it a perfect spot for a day trip.
-            </p>
-          </div>
-        </div>
-        <div className="places-to-visit-card places-to-visit-card14 swipe">
-          <div className="places-to-visit-card-content">
-            <h2>NAG TIBBA</h2>
-            <p>
-            For trekking enthusiasts, Nag Tibba offers an exhilarating experience. Known as the "Serpent's Peak," Nag Tibba is the highest peak in the lesser Himalayas of Uttarakhand, standing at an altitude of 3,022 meters. The trek to the summit is moderately challenging, offering stunning views of the snow-covered peaks of Bandarpoonch, Kedarnath, and Gangotri. The trek can be done in two days and is perfect for those looking to explore the region's natural beauty up close.
-            </p>
-          </div>
-        </div>
+        
       </div>
-    </section> */}
-    <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-          height: "fit-content",
-          textAlign: "center",
-          backgroundColor: "#fff",
-          color: "#333",
-          fontFamily: "Arial, sans-serif",
-          padding: "10px",
-        }}
-      >
-        <h1 style={{ fontSize: "2.5rem", color: "#8C071B" }}>
-          Places To Visit Page Under Construction
-        </h1>
-        <p
-          style={{
-            fontSize: "1.2rem",
-            maxWidth: "600px",
-            marginBottom: "20px",
-          }}
-        >
-          We’re working hard to bring you a fantastic experience! This page is
-          currently under construction. Please check back soon for updates.
-        </p>
-        <img
-          src={UnderConstruction}
-          alt="Under Construction"
-          style={{ maxWidth: "100%", marginBottom: "20px" }}
-        />
-        <div style={{ display: "flex", gap: "10px" }}>
-          <button
-            style={{
-              padding: "10px 20px",
-              fontSize: "1rem",
-              color: "#fff",
-              backgroundColor: "#8C071B",
-              border: "none",
-              borderRadius: "5px",
-              cursor: "pointer",
-              fontWeight: "600",
-            }}
-            onClick={() => {
-              navigate("/");
-            }}
-          >
-            Go to Home
-          </button>
-          <button
-            style={{
-              padding: "10px 20px",
-              fontSize: "1rem",
-              color: "#fff",
-              backgroundColor: "#8C071B",
-              border: "none",
-              borderRadius: "5px",
-              cursor: "pointer",
-              fontWeight: "600",
-            }}
-            onClick={() => {
-              navigate("/contact");
-            }}
-          >
-            Contact Us
-          </button>
-        </div>
-      </div>
+    </section>
+    
     </>
     
   );

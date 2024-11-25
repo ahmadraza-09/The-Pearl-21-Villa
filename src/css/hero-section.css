@@ -68,8 +68,13 @@
 
 /* Responsive */
 @media (max-width: 480px) {
+
+    .hero-section {
+        height: 50vh;
+    }
+
     .overlay-content {
-        margin-top: 150px;
+        margin-top: 60px;
     }
 
     .overlay-content h1 {

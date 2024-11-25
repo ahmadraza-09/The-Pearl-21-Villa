@@ -4,8 +4,8 @@ import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import TopBanner from '../components/top-banner';
 import SocialMediaFixed from '../components/socialmedia-fixed';
-import About from '../components/about';
 import IntroductionSection from '../components/introduction-section';
+import Services from '../components/services';
 
 
 const AboutPage = () => {
@@ -31,7 +31,8 @@ const AboutPage = () => {
             <TopBanner />
             <Navbar />
             {/* <About/> */}
-                    <IntroductionSection/>
+            <IntroductionSection/>
+            <Services/>
             <Footer />
             <SocialMediaFixed />
         </>
