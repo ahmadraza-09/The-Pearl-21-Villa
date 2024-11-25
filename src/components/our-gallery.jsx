@@ -24,7 +24,7 @@ import GalleryImage21 from "../assets/gallery/21.jpg";
 import GalleryImage22 from "../assets/gallery/22.jpg";
 import GalleryImage23 from "../assets/gallery/23.jpg";
 import GalleryImage24 from "../assets/gallery/24.jpg";
-import SkeletonGallery from "./skeleton-gallery";
+import { Skeleton } from "@mui/material";
 // import GalleryImage25 from "../assets/gallery/25.jpg";
 // import GalleryImage26 from "../assets/gallery/26.jpg";
 // import GalleryImage27 from "../assets/gallery/27.jpg";
@@ -162,13 +162,7 @@ const OurGallery = () => {
             key={index}
             onClick={() => openImage(image)}
           >
-            {!loadedImages[index] && <SkeletonGallery />} {/* Show skeleton if image is loading */}
-            <img
-              src={image}
-              alt={`Gallery image ${index + 1}`}
-              onLoad={() => handleImageLoad(index)} // Mark image as loaded
-              style={{ display: loadedImages[index] ? "block" : "none" }} // Hide image until loaded
-            />
+            <img src={image} alt={`Gallery image ${index + 1}`} />
           </div>
         ))}
       </div>
@@ -179,10 +173,10 @@ const OurGallery = () => {
           <span className="close-btn" onClick={closeImage}>
             <i className="fa-solid fa-xmark"></i>
           </span>
-          <img src={selectedImage} alt="Popup" />
+          <img src={selectedImage} alt="Popup" onLoad={<Skeleton variant='rounded' width={250} height={150}/>}/>
         </div>
       )}
-    </div>    
+    </div>
     </>
     
   );
