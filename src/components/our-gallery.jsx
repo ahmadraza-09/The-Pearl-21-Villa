@@ -1,31 +1,30 @@
 import React, { useState } from "react";
 import "../css/our-gallery.css";
-import { useNavigate } from "react-router-dom";
-import UnderConstruction from "../assets/under-construction.jpg";
-// import GalleryImage1 from "../assets/gallery/1.jpg";
-// import GalleryImage2 from "../assets/gallery/2.jpg";
-// import GalleryImage3 from "../assets/gallery/3.jpg";
-// import GalleryImage4 from "../assets/gallery/4.jpg";
-// import GalleryImage5 from "../assets/gallery/5.jpg";
-// import GalleryImage6 from "../assets/gallery/6.jpg";
-// import GalleryImage7 from "../assets/gallery/7.jpg";
-// import GalleryImage8 from "../assets/gallery/8.jpg";
-// import GalleryImage9 from "../assets/gallery/9.jpg";
-// import GalleryImage10 from "../assets/gallery/10.jpg";
-// import GalleryImage11 from "../assets/gallery/11.jpg";
-// import GalleryImage12 from "../assets/gallery/12.jpg";
-// import GalleryImage13 from "../assets/gallery/13.jpg";
-// import GalleryImage14 from "../assets/gallery/14.jpg";
-// import GalleryImage15 from "../assets/gallery/15.jpg";
-// import GalleryImage16 from "../assets/gallery/16.jpg";
-// import GalleryImage17 from "../assets/gallery/17.jpg";
-// import GalleryImage18 from "../assets/gallery/18.jpg";
-// import GalleryImage19 from "../assets/gallery/19.jpg";
-// import GalleryImage20 from "../assets/gallery/20.jpg";
-// import GalleryImage21 from "../assets/gallery/21.jpg";
-// import GalleryImage22 from "../assets/gallery/22.jpg";
-// import GalleryImage23 from "../assets/gallery/23.jpg";
-// import GalleryImage24 from "../assets/gallery/24.jpg";
+import GalleryImage1 from "../assets/gallery/1.jpg";
+import GalleryImage2 from "../assets/gallery/2.jpg";
+import GalleryImage3 from "../assets/gallery/3.jpg";
+import GalleryImage4 from "../assets/gallery/4.jpg";
+import GalleryImage5 from "../assets/gallery/5.jpg";
+import GalleryImage6 from "../assets/gallery/6.jpg";
+import GalleryImage7 from "../assets/gallery/7.jpg";
+import GalleryImage8 from "../assets/gallery/8.jpg";
+import GalleryImage9 from "../assets/gallery/9.jpg";
+import GalleryImage10 from "../assets/gallery/10.jpg";
+import GalleryImage11 from "../assets/gallery/11.jpg";
+import GalleryImage12 from "../assets/gallery/12.jpg";
+import GalleryImage13 from "../assets/gallery/13.jpg";
+import GalleryImage14 from "../assets/gallery/14.jpg";
+import GalleryImage15 from "../assets/gallery/15.jpg";
+import GalleryImage16 from "../assets/gallery/16.jpg";
+import GalleryImage17 from "../assets/gallery/17.jpg";
+import GalleryImage18 from "../assets/gallery/18.jpg";
+import GalleryImage19 from "../assets/gallery/19.jpg";
+import GalleryImage20 from "../assets/gallery/20.jpg";
+import GalleryImage21 from "../assets/gallery/21.jpg";
+import GalleryImage22 from "../assets/gallery/22.jpg";
+import GalleryImage23 from "../assets/gallery/23.jpg";
+import GalleryImage24 from "../assets/gallery/24.jpg";
+import SkeletonGallery from "./skeleton-gallery";
 // import GalleryImage25 from "../assets/gallery/25.jpg";
 // import GalleryImage26 from "../assets/gallery/26.jpg";
 // import GalleryImage27 from "../assets/gallery/27.jpg";
@@ -66,30 +65,30 @@ import UnderConstruction from "../assets/under-construction.jpg";
 // import GalleryImage62 from "../assets/gallery/62.jpg";
 
 const imageList = [
-  // GalleryImage1,
-  // GalleryImage2,
-  // GalleryImage3,
-  // GalleryImage4,
-  // GalleryImage5,
-  // GalleryImage6,
-  // GalleryImage7,
-  // GalleryImage8,
-  // GalleryImage9,
-  // GalleryImage10,
-  // GalleryImage11,
-  // GalleryImage12,
-  // GalleryImage13,
-  // GalleryImage14,
-  // GalleryImage15,
-  // GalleryImage16,
-  // GalleryImage17,
-  // GalleryImage18,
-  // GalleryImage19,
-  // GalleryImage20,
-  // GalleryImage21,
-  // GalleryImage22,
-  // GalleryImage23,
-  // GalleryImage24,
+  GalleryImage1,
+  GalleryImage2,
+  GalleryImage3,
+  GalleryImage4,
+  GalleryImage5,
+  GalleryImage6,
+  GalleryImage7,
+  GalleryImage8,
+  GalleryImage9,
+  GalleryImage10,
+  GalleryImage11,
+  GalleryImage12,
+  GalleryImage13,
+  GalleryImage14,
+  GalleryImage15,
+  GalleryImage16,
+  GalleryImage17,
+  GalleryImage18,
+  GalleryImage19,
+  GalleryImage20,
+  GalleryImage21,
+  GalleryImage22,
+  GalleryImage23,
+  GalleryImage24,
   // GalleryImage25,
   // GalleryImage26,
   // GalleryImage27,
@@ -131,7 +130,6 @@ const imageList = [
 ];
 
 const OurGallery = () => {
-  const navigate = useNavigate();
   const [selectedImage, setSelectedImage] = useState(null); // To store the clicked image
   const [loadedImages, setLoadedImages] = useState(
     new Array(imageList.length).fill(false)
@@ -154,8 +152,8 @@ const OurGallery = () => {
 
   return (
     <>
-    {/* <div className="our-gallery-section"> */}
-      {/* <h1 className="swipe">Our Gallery</h1>
+    <div className="our-gallery-section">
+      <h1 className="swipe">Our Gallery</h1>
       <h4 className="swipe">Explore The Resort</h4>
       <div className="our-gallery-wrapper">
         {imageList.map((image, index) => (
@@ -164,90 +162,27 @@ const OurGallery = () => {
             key={index}
             onClick={() => openImage(image)}
           >
-            <img src={image} alt={`Gallery image ${index + 1}`} />
+            {!loadedImages[index] && <SkeletonGallery />} {/* Show skeleton if image is loading */}
+            <img
+              src={image}
+              alt={`Gallery image ${index + 1}`}
+              onLoad={() => handleImageLoad(index)} // Mark image as loaded
+              style={{ display: loadedImages[index] ? "block" : "none" }} // Hide image until loaded
+            />
           </div>
         ))}
-      </div> */}
+      </div>
 
       {/* Popup section */}
-      {/* {selectedImage && (
+      {selectedImage && (
         <div className="popup-image">
           <span className="close-btn" onClick={closeImage}>
             <i className="fa-solid fa-xmark"></i>
           </span>
           <img src={selectedImage} alt="Popup" />
         </div>
-      )} */}
-    {/* </div> */}
-    <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-          height: "fit-content",
-          textAlign: "center",
-          backgroundColor: "#fff",
-          color: "#333",
-          fontFamily: "Arial, sans-serif",
-          padding: "10px",
-        }}
-      >
-        <h1 style={{ fontSize: "2.5rem", color: "#8C071B" }}>
-          Gallery Page Under Construction
-        </h1>
-        <p
-          style={{
-            fontSize: "1.2rem",
-            maxWidth: "600px",
-            marginBottom: "20px",
-          }}
-        >
-          We’re working hard to bring you a fantastic experience! This page is
-          currently under construction. Please check back soon for updates.
-        </p>
-        <img
-          src={UnderConstruction}
-          alt="Under Construction"
-          style={{ maxWidth: "100%", marginBottom: "20px" }}
-        />
-        <div style={{ display: "flex", gap: "10px" }}>
-          <button
-            style={{
-              padding: "10px 20px",
-              fontSize: "1rem",
-              color: "#fff",
-              backgroundColor: "#8C071B",
-              border: "none",
-              borderRadius: "5px",
-              cursor: "pointer",
-              fontWeight: "600",
-            }}
-            onClick={() => {
-              navigate("/");
-            }}
-          >
-            Go to Home
-          </button>
-          <button
-            style={{
-              padding: "10px 20px",
-              fontSize: "1rem",
-              color: "#fff",
-              backgroundColor: "#8C071B",
-              border: "none",
-              borderRadius: "5px",
-              cursor: "pointer",
-              fontWeight: "600",
-            }}
-            onClick={() => {
-              navigate("/contact");
-            }}
-          >
-            Contact Us
-          </button>
-        </div>
-      </div>
+      )}
+    </div>    
     </>
     
   );
