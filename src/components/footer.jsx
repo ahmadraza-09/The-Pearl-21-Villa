@@ -142,6 +142,7 @@ const Footer = () => {
           <div class="footer-col">
             <h4>Services</h4>
             <span>Room Service</span>
+            <span>Swimming Pool</span>
             <span>Lunch</span>
             <span>Breakfast</span>
             <span>Dinner</span>

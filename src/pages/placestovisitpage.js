@@ -9,23 +9,23 @@ import PlacesToVisit from '../components/places-to-visit';
 const PlacesToVisitPage = () => {
     return (
         <>
-            {/* <Helmet>
-                <title>Places to Visit Near Vanasthali Jungle Resort</title>
-                <meta name="description" content="Discover must-visit attractions near Vanasthali Jungle Resort in Jim Corbett. Explore wildlife safaris, river walks, local villages, temples, and scenic spots in and around Ramnagar." />
-                <meta name="keywords" content="Places to visit near Vanasthali Jungle Resort, Jim Corbett attractions, things to do in Ramnagar, Corbett sightseeing, wildlife safari, Corbett waterfalls, Garjia Devi Temple, Kosi River, Corbett Museum, local villages near Corbett, nature trails" />
-                <link rel="canonical" href="https://vanasthalicorbett.com/places-to-visit" />
+            <Helmet>
+                <title>Places to Visit Near The Pearl 21 Villa - Explore Udaipur's Best Attractions</title>
+                <meta name="description" content="Discover the top attractions near The Pearl 21 Villa in Udaipur, including Udai Sagar Lake, Swaroop Sagar Lake, Sajjangarh Biological Park, Monsoon Palace, Badi Lake, Lake Pichola, Jagdish Temple, Fateh Sagar Lake, Doodh Talai Lake, City Palace, and Bagore Ki Haveli." />
+                <meta name="keywords" content="places to visit near The Pearl 21 Villa, Udai Sagar Lake, Swaroop Sagar Lake, Sajjangarh Biological Park, Monsoon Palace, Badi Lake, Lake Pichola, Jagdish Temple, Fateh Sagar Lake, Doodh Talai Lake, City Palace, Bagore Ki Haveli, Udaipur attractions, City of Lakes sightseeing, tourist spots near The Pearl 21 Villa, Udaipur travel guide" />
+                <link rel="canonical" href="https://thepearl21villa.com/places-to-visit" />
 
+                {/* JSON-LD structured data */}
                 <script type="application/ld+json">
                     {JSON.stringify({
                         "@context": "https://schema.org",
                         "@type": "Hotel",
-                        "name": "Places to Visit Near Vanasthali Jungle Resort",
-                        "telephone": "+91 8510934101",
-                        "url": "https://vanasthalicorbett.com/places-to-visit"
+                        "name": "Places to Visit Near The Pearl 21 Villa - Explore Udaipur's Best Attractions",
+                        "telephone": "+91-9971834141",
+                        "url": "https://thepearl21villa.com/places-to-visit"
                     })}
                 </script>
-            </Helmet> */}
-
+            </Helmet>
             <TopBanner />
             <Navbar />
             <PlacesToVisit />

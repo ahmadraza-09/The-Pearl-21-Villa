@@ -9,22 +9,24 @@ import SocialMediaFixed from '../components/socialmedia-fixed';
 const PaymentPage = () => {
     return (
         <>
-            {/* <Helmet>
-                <title>Payment - Vanasthali Jungle Resort</title>
-                <meta name="description" content="Secure and easy payment options for booking your stay at Vanasthali Jungle Resort in Jim Corbett. Make payments via multiple methods and confirm your reservation with ease." />
-                <meta name="keywords" content="Vanasthali Jungle Resort payment, Jim Corbett resort booking, online payment for resort, Vanasthali payment options, secure payment gateway, Jim Corbett resort reservations, resort payment methods, confirm booking payment" />
-                <link rel="canonical" href="https://vanasthalicorbett.com/payment" />
+            <Helmet>
+                <title>Payment - The Pearl 21 Villa in Udaipur</title>
+                <meta name="description" content="Make secure payments for your stay at The Pearl 21 Villa, Udaipur. We offer multiple payment options for a seamless booking experience in the City of Lakes." />
+                <meta name="keywords" content="payment page, The Pearl 21 Villa payment, Udaipur hotel payment, secure payment options Udaipur, online booking payment, luxury villa payment, book villa Udaipur online, payment gateway for villa booking" />
+                <link rel="canonical" href="https://thepearl21villa.com/payment" />
 
+                {/* JSON-LD structured data */}
                 <script type="application/ld+json">
                     {JSON.stringify({
                         "@context": "https://schema.org",
                         "@type": "Hotel",
-                        "name": "Vanasthali Jungle Resort",
-                        "telephone": "+91 8510934101",
-                        "url": "https://vanasthalicorbett.com/payment"
+                        "name": "Payment - The Pearl 21 Villa in Udaipur",
+                        "telephone": "+91-9971834141",
+                        "url": "https://thepearl21villa.com/payment"
                     })}
                 </script>
-            </Helmet> */}
+            </Helmet>
+
 
 
             <TopBanner />

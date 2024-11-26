@@ -9,22 +9,24 @@ import SocialMediaFixed from '../components/socialmedia-fixed';
 const GalleryPage = () => {
     return (
         <>
-            {/* <Helmet>
-                <title>Gallery - Vanasthali Jungle Resort</title>
-                <meta name="description" content="Explore the photo gallery of Vanasthali Jungle Resort in Jim Corbett. Browse images of luxurious rooms, wildlife safaris, scenic landscapes, and memorable experiences at our resort." />
-                <meta name="keywords" content="Vanasthali Jungle Resort gallery, Jim Corbett resort photos, wildlife safari pictures, luxury resort images, Corbett National Park gallery, scenic photos, Ramnagar resort images, nature retreat gallery, Corbett experiences, jungle resort photos" />
-                <link rel="canonical" href="https://vanasthalicorbett.com/gallery" />
+            <Helmet>
+                <title>Gallery - The Pearl 21 Villa in Udaipur</title>
+                <meta name="description" content="Explore the photo gallery of The Pearl 21 Villa in Udaipur. View stunning images of our luxurious accommodations, beautiful surroundings, and serene atmosphere in the City of Lakes." />
+                <meta name="keywords" content="The Pearl 21 Villa gallery, villa photos Udaipur, luxury accommodations Udaipur, The Pearl 21 Villa images, Udaipur villa gallery, luxury stays Udaipur, City of Lakes villa pictures, The Pearl Villa Udaipur gallery" />
+                <link rel="canonical" href="https://thepearl21villa.com/gallery" />
 
+                {/* JSON-LD structured data */}
                 <script type="application/ld+json">
                     {JSON.stringify({
                         "@context": "https://schema.org",
                         "@type": "Hotel",
-                        "name": "Gallery - Vanasthali Jungle Resort",
-                        "telephone": "+91 8510934101",
-                        "url": "https://vanasthalicorbett.com/gallery"
+                        "name": "Gallery - The Pearl 21 Villa in Udaipur<",
+                        "telephone": "+91-9971834141",
+                        "url": "https://thepearl21villa.com/gallery"
                     })}
                 </script>
-            </Helmet> */}
+            </Helmet>
+
 
 
             <TopBanner />

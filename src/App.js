@@ -12,6 +12,7 @@ import PlacesToVisitPage from './pages/placestovisitpage'
 import SuperDeluxeRoom from './pages/super-deluxe-room';
 import FamilyRoom from './pages/family-room';
 import PremiumRoom from './pages/premium-room-page';
+import RoomPage from './pages/roompage';
 
 
 function App() {
@@ -24,7 +25,8 @@ function App() {
           <Route path='/gallery' element={<GalleryPage />} />
           <Route path='/about' element={<AboutPage />} />
           {/* <Route path='/faq' element={<FaqPage />} /> */}
-          <Route path='/rooms' element={<RoomsPage />} />
+          {/* <Route path='/rooms' element={<RoomsPage />} /> */}
+          <Route path='/rooms' element={<RoomPage />} />
           <Route path='/payment' element={<Payment />} />
           <Route path='/places-to-visit' element={<PlacesToVisitPage />} />
           <Route path="/premium-room" element={<PremiumRoom />} />

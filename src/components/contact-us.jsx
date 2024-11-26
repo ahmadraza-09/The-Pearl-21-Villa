@@ -79,8 +79,8 @@ const ContactUs = () => {
               <div className="contact-box-right">
                 <h3>Office</h3>
                 <p>
-                  
-Near Eco Park, Ward Jaunpur, Lagga Goth, Dhanaulti, Uttarakhand 249180
+
+                  Near Eco Park, Ward Jaunpur, Lagga Goth, Dhanaulti, Uttarakhand 249180
                 </p>
               </div>
             </div>
@@ -114,7 +114,7 @@ Near Eco Park, Ward Jaunpur, Lagga Goth, Dhanaulti, Uttarakhand 249180
                 >
                   +91 9971834141
                 </a>
-                
+
               </div>
             </div>
           </div>
