@@ -10,22 +10,23 @@ const RoomsPage = () => {
     return (
         <>
             <Helmet>
-                <title>Rooms at Hotel Aroma Nainital - Comfortable Stay in Nainital</title>
-                <meta name="description" content="Explore the luxurious rooms at Hotel Aroma Nainital. Choose from a variety of rooms with stunning views, modern amenities, and comfortable accommodations for a memorable stay in Nainital." />
-                <meta name="keywords" content="Hotel Aroma Nainital rooms, luxury rooms in Nainital, hotel rooms Nainital, accommodations Nainital, rooms with lake view Nainital, best hotel rooms Nainital, Hotel Aroma room booking, Nainital hotel accommodation, comfortable rooms Nainital" />
-                <link rel="canonical" href="https://hotelaromanainital.com/rooms" />
+    <title>Rooms - The Pearl 21 Villa, Udaipur</title>
+    <meta name="description" content="Explore the luxurious rooms at The Pearl 21 Villa, Udaipur. Choose from a variety of premium room options, each designed to offer ultimate comfort, exclusive amenities, and stunning views of Udaipur." />
+<meta name="keywords" content="rooms at The Pearl 21 Villa, Udaipur luxury rooms, villa rooms Udaipur, luxury stays in Udaipur, best rooms in Udaipur, premium accommodations Udaipur, villa room options, Udaipur villa rooms, luxury resort rooms" />
+    <link rel="canonical" href="https://thepearl21villa.com/rooms" />
 
-                {/* JSON-LD structured data */}
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "Hotel",
-                        "name": "Rooms at Hotel Aroma Nainital - Comfortable Stay in Nainital",
-                        "telephone": "+91 8743000120",
-                        "url": "https://hotelaromanainital.com/rooms"
-                    })}
-                </script>
-            </Helmet>
+    {/* JSON-LD structured data */}
+    <script type="application/ld+json">
+        {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "hotel",
+            "name": "Room Options",
+            "telephone": "+91-9971834141",
+            "url": "https://thepearl21villa.com/rooms",
+        })}
+    </script>
+</Helmet>
+
 
             {<TopBanner />}
             {<Navbar />}

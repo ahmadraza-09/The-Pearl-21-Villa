@@ -17,9 +17,9 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 import image1 from "../assets/rooms/1.jpg";
-import image2 from "../assets/rooms/2.jpg";
-import image3 from "../assets/rooms/3.jpg";
-import image4 from "../assets/rooms/4.jpg";
+import image2 from "../assets/rooms/7.jpg";
+import image3 from "../assets/rooms/5.jpg";
+import image4 from "../assets/rooms/6.jpg";
 
 import icon1 from "../assets/icons/double-bed.png";
 import icon2 from "../assets/icons/wi-fi.png";
@@ -27,15 +27,15 @@ import icon3 from "../assets/icons/laundry-machine.png";
 import icon4 from "../assets/icons/tv-monitor.png";
 import icon5 from "../assets/icons/parked-car.png";
 
-const SuperDeluxeRoomComp = () => {
+const SuperDeluxeRoomWithBalcony = () => {
   const navigate = useNavigate();
   return (
     <section className="why-choose-section">
-      <h1 className="swipe">Super Deluxe Room</h1>
+      <h1 className="swipe">Super Deluxe Room With Balcony</h1>
       <div className="why-choose-slider">
         <Swiper
           modules={[Navigation, Autoplay, Pagination, Scrollbar, A11y]}
-          autoplay={{ delay: 5000, disableOnInteraction: false }}
+          autoplay={{ delay: 5000, disableOnInteraction: true }}
           spaceBetween={30}
           slidesPerView={1}
           style={{ maxWidth: "100%", minWidth: "300px", padding: "0px 0px" }}
@@ -102,21 +102,13 @@ const SuperDeluxeRoomComp = () => {
         </div>
       </div>
       <div className="premium-room-comp-content room-card-price-left ">
-        <h2>Super Deluxe Room</h2>
+        <h2>Super Deluxe Room With Balcony</h2>
         <br />
         <h2>
-          Rs. 7000 <span>/ Night</span> <span>Season Only</span>
-        </h2>
-        <h2>
-          Rs. 5000 <span>/ Night</span> <span>Off Season Only</span>
+          Rs. 3958 <span>/ Night</span>
         </h2>
         <p>
-          A heaven of indulgence, the spacious super deluxe rooms is facilitated
-          by a range of state-of-the-art amenities accompanied by warm and
-          efficient services. Wi-Fi enabled with ample broadband and the
-          exclusive perks in the form of flat TVs, modern luxurious washrooms
-          and of course a comfortable bed to relax & recharge yourself for the
-          next day.
+        The Super Deluxe Room with Balcony offers a perfect blend of luxury and comfort. With elegant interiors, sleek furnishings, and a private balcony, it provides a serene and sophisticated space to relax. Designed for ultimate comfort and security, this room ensures a memorable stay.
         </p>
         <button
           onClick={() => {
@@ -130,4 +122,4 @@ const SuperDeluxeRoomComp = () => {
   );
 };
 
-export default SuperDeluxeRoomComp;
+export default SuperDeluxeRoomWithBalcony;

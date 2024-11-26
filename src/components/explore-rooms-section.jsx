@@ -2,36 +2,36 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../css/explore-rooms-section.css";
 import RoomCard from "./room-card";
-import PremiumRoom from "../assets/rooms/1.jpg"; // Add more images if needed
-import SuperDeluxeRoom from "../assets/rooms/2.jpg"; // Add more images if needed
-import FamilyRoom from "../assets/rooms/6.jpg"; // Add more images if needed
+import SuperDeluxeRoomWithBalcony from "../assets/rooms/1.jpg"; // Add more images if needed
+import SuperDeluxeRoomWithPrivatePool from "../assets/rooms/2.jpg"; // Add more images if needed
+import SuperDeluxeRoomWithJaccuziTub from "../assets/rooms/6.jpg"; // Add more images if needed
 
 const ExploreRoomsSection = () => {
   const navigate = useNavigate();
   const rooms = [
     {
       id: 1,
-      image: PremiumRoom,
-      title: "Premium Room",
+      image: SuperDeluxeRoomWithBalcony,
+      title: "SUPER DELUXE ROOM WITH BALCONY",
       description:
-        "Designed specially to pamper its guests, the premium rooms showcase a perfect blend of luxury in its accommodation with utmost security. The rooms bestow an elegant design combined with refined elegance and luxuriously sleek accommodation.",
-      price: 4000,
+        "The Super Deluxe Room with Balcony offers a perfect blend of luxury and comfort. With elegant interiors, sleek furnishings, and a private balcony, it provides a serene and sophisticated space to relax. Designed for ultimate comfort and security, this room ensures a memorable stay.",
+      price: 3958,
     },
     {
       id: 2,
-      image: SuperDeluxeRoom,
-      title: "Super Deluxe Room",
+      image: SuperDeluxeRoomWithPrivatePool,
+      title: "SUPER DELUXE WITH PRIVATE POOL",
       description:
-        "A haven of indulgence, the spacious super deluxe rooms is facilitated by a range of state-of-the-art amenities accompanied by warm and efficient services. Wi-Fi enabled with ample broadband and the exclusive perks in the form of flat TVs .",
-      price: 5000,
+        "The Super Deluxe Room with Private Pool offers a luxurious stay with elegant interiors and a private pool for ultimate relaxation. Designed for comfort and exclusivity, it provides a serene and opulent experience. Perfect for guests seeking privacy and indulgence.",
+      price: 4225,
     },
     {
       id: 3,
-      image: FamilyRoom,
-      title: "Family Room",
+      image: SuperDeluxeRoomWithJaccuziTub,
+      title: "SUPER DELUXE ROOM WITH JACCUZI TUB",
       description:
-        "A haven of indulgence, the spacious family rooms is facilitated by a range of state-of-the-art amenities accompanied by warm and efficient services. Wi-Fi enabled with ample broadband and the exclusive perks in the form of flat TVs",
-      price: 7000,
+        "The Super Deluxe Room with Jacuzzi Tub offers a luxurious and relaxing experience with elegant interiors and a private Jacuzzi tub. Designed for ultimate comfort, it combines modern amenities with a touch of opulence. Perfect for guests seeking relaxation and indulgence in a serene setting.",
+      price: 4670,
     },
   ];
 

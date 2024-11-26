@@ -1,6 +1,5 @@
 import React from "react";
 import "../css/why-choose.css";
-import "../css/premium-room-comp.css";
 import { useNavigate } from "react-router-dom";
 import {
   Navigation,
@@ -16,8 +15,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-import image1 from "../assets/rooms/1.jpg";
-import image2 from "../assets/rooms/2.jpg";
+import image1 from "../assets/rooms/6.jpg";
+import image2 from "../assets/rooms/7.jpg";
 import image3 from "../assets/rooms/3.jpg";
 import image4 from "../assets/rooms/4.jpg";
 
@@ -27,15 +26,15 @@ import icon3 from "../assets/icons/laundry-machine.png";
 import icon4 from "../assets/icons/tv-monitor.png";
 import icon5 from "../assets/icons/parked-car.png";
 
-const PremiumRoomComp = () => {
+const SuperDeluxeRoomWithJaccuziTub = () => {
   const navigate = useNavigate();
   return (
     <section className="why-choose-section">
-      <h1 className="swipe">Premium Room</h1>
+      <h1 className="swipe">SUPER DELUXE ROOM WITH JACCUZI TUB</h1>
       <div className="why-choose-slider">
         <Swiper
           modules={[Navigation, Autoplay, Pagination, Scrollbar, A11y]}
-          autoplay={{ delay: 5000, disableOnInteraction: true }}
+          autoplay={{ delay: 5000, disableOnInteraction: false }}
           spaceBetween={30}
           slidesPerView={1}
           style={{ maxWidth: "100%", minWidth: "300px", padding: "0px 0px" }}
@@ -102,24 +101,14 @@ const PremiumRoomComp = () => {
         </div>
       </div>
       <div className="premium-room-comp-content room-card-price-left ">
-        <h2>Premium Room</h2>
+        <h2>SUPER DELUXE ROOM WITH JACCUZI TUB</h2>
         <br />
         <h2>
-          Rs. 6000 <span>/ Night</span> <span>Season Only</span>
+          Rs. 4670 <span>/ Night</span>
         </h2>
-        <h2>
-          Rs. 4000 <span>/ Night</span> <span>Off Season Only</span>
-        </h2>
+        
         <p>
-          Designed specially to pamper its guests, the premium rooms showcase a
-          perfect blend of luxury in its accommodation with utmost security. The
-          rooms bestow an elegant design combined with refined elegance and
-          luxuriously appointed sleek accommodation. Tailor-made to meet the
-          specific needs of the guests, the Deluxe Rooms offer accommodation
-          that is more than just comfortable. From glorious touches in the room,
-          with state- of -the art amenities and services to enhanced top-notch
-          privacy – suite rooms ensure that the travelers feel pampered and
-          secure.
+        The Super Deluxe Room with Jacuzzi Tub offers a luxurious and relaxing experience with elegant interiors and a private Jacuzzi tub. Designed for ultimate comfort, it combines modern amenities with a touch of opulence. Perfect for guests seeking relaxation and indulgence in a serene setting.
         </p>
         <button
           onClick={() => {
@@ -133,4 +122,4 @@ const PremiumRoomComp = () => {
   );
 };
 
-export default PremiumRoomComp;
+export default SuperDeluxeRoomWithJaccuziTub;

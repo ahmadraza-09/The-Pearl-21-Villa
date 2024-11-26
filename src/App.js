@@ -5,14 +5,12 @@ import HomePage from './pages/homepage';
 import ContactPage from './pages/contactpage';
 import GalleryPage from './pages/gallerypage';
 import AboutPage from './pages/aboutpage';
-// import FaqPage from './pages/faqpage';
 import RoomsPage from './pages/rooms-page';
 import Payment from './pages/paymentpage';
 import PlacesToVisitPage from './pages/placestovisitpage'
-import SuperDeluxeRoom from './pages/super-deluxe-room';
-import FamilyRoom from './pages/family-room';
-import PremiumRoom from './pages/premium-room-page';
-import RoomPage from './pages/roompage';
+import SuperDeluxeRoomWithPrivatePoolPage from './pages/super-deluxe-with-private-pool-page';
+import SuperDeluxeRoomWithJaccuziTubPage from './pages/super-deluxe-room-with-jaccuzi-tub-page';
+import SuperDeluxeRoomWithBalconyPage from './pages/super-deluxe-room-with-balcony-page';
 
 
 function App() {
@@ -24,14 +22,12 @@ function App() {
           <Route path='/contact' element={<ContactPage />} />
           <Route path='/gallery' element={<GalleryPage />} />
           <Route path='/about' element={<AboutPage />} />
-          {/* <Route path='/faq' element={<FaqPage />} /> */}
-          {/* <Route path='/rooms' element={<RoomsPage />} /> */}
-          <Route path='/rooms' element={<RoomPage />} />
+          <Route path='/rooms' element={<RoomsPage />} />
           <Route path='/payment' element={<Payment />} />
           <Route path='/places-to-visit' element={<PlacesToVisitPage />} />
-          <Route path="/premium-room" element={<PremiumRoom />} />
-          <Route path="/super-deluxe-room" element={<SuperDeluxeRoom />} />
-          <Route path="/family-room" element={<FamilyRoom />} />
+          <Route path="/super-deluxe-room-with-balcony" element={<SuperDeluxeRoomWithBalconyPage />} />
+          <Route path="/super-deluxe-with-private-pool" element={<SuperDeluxeRoomWithPrivatePoolPage />} />
+          <Route path="/super-deluxe-room-with-jaccuzi-tub" element={<SuperDeluxeRoomWithJaccuziTubPage />} />
         </Routes>
       </BrowserRouter>
     </HelmetProvider>

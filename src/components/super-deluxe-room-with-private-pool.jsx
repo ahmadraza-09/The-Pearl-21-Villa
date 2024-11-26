@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/why-choose.css";
+import "../css/premium-room-comp.css";
 import { useNavigate } from "react-router-dom";
 import {
   Navigation,
@@ -15,10 +16,10 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-import image1 from "../assets/rooms/1.jpg";
-import image2 from "../assets/rooms/2.jpg";
-import image3 from "../assets/rooms/3.jpg";
-import image4 from "../assets/rooms/4.jpg";
+import image1 from "../assets/rooms/2.jpg";
+import image2 from "../assets/rooms/7.jpg";
+import image3 from "../assets/rooms/8.jpg";
+import image4 from "../assets/rooms/5.jpg";
 
 import icon1 from "../assets/icons/double-bed.png";
 import icon2 from "../assets/icons/wi-fi.png";
@@ -26,11 +27,11 @@ import icon3 from "../assets/icons/laundry-machine.png";
 import icon4 from "../assets/icons/tv-monitor.png";
 import icon5 from "../assets/icons/parked-car.png";
 
-const FamilyRoomComp = () => {
+const SuperDeluxeRoomWithPrivatePool = () => {
   const navigate = useNavigate();
   return (
     <section className="why-choose-section">
-      <h1 className="swipe">Family Room</h1>
+      <h1 className="swipe">SUPER DELUXE WITH PRIVATE POOL</h1>
       <div className="why-choose-slider">
         <Swiper
           modules={[Navigation, Autoplay, Pagination, Scrollbar, A11y]}
@@ -101,20 +102,14 @@ const FamilyRoomComp = () => {
         </div>
       </div>
       <div className="premium-room-comp-content room-card-price-left ">
-        <h2>Family Room</h2>
+        <h2>SUPER DELUXE WITH PRIVATE POOL</h2>
         <br />
         <h2>
-          Rs. 9000 <span>/ Night</span> <span>Season Only</span>
+          Rs. 4225 <span>/ Night</span>
         </h2>
-        <h2>
-          Rs. 7000 <span>/ Night</span> <span>Off Season Only</span>
-        </h2>
+        
         <p>
-          A heaven of indulgence, the spacious family rooms is facilitated by a
-          range of state-of-the-art amenities accompanied by warm and efficient
-          services. Wi-Fi enabled with ample broadband and the exclusive perks
-          in the form of flat TVs, modern luxurious washrooms and of course a
-          comfortable bed to relax & recharge yourself for the next day.
+        The Super Deluxe Room with Private Pool offers a luxurious stay with elegant interiors and a private pool for ultimate relaxation. Designed for comfort and exclusivity, it provides a serene and opulent experience. Perfect for guests seeking privacy and indulgence.
         </p>
         <button
           onClick={() => {
@@ -128,4 +123,4 @@ const FamilyRoomComp = () => {
   );
 };
 
-export default FamilyRoomComp;
+export default SuperDeluxeRoomWithPrivatePool;

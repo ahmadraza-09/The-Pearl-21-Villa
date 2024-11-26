@@ -33,7 +33,7 @@ const HomePage = () => {
             <Navbar />
             <HeroSection/>
             <IntroductionSection/>
-            {/* <ExploreRoomsSection/> */}
+            <ExploreRoomsSection/>
             <Services/>
             <Footer />
             <SocialMediaFixed />
