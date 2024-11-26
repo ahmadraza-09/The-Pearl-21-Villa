@@ -2,9 +2,9 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../css/explore-rooms-section.css";
 import RoomCard from "./room-card";
-import SuperDeluxeRoomWithBalcony from "../assets/rooms/1.jpg"; // Add more images if needed
-import SuperDeluxeRoomWithPrivatePool from "../assets/rooms/2.jpg"; // Add more images if needed
-import SuperDeluxeRoomWithJaccuziTub from "../assets/rooms/6.jpg"; // Add more images if needed
+import SuperDeluxeRoomWithBalcony from "../assets/rooms/1.webp"; // Add more images if needed
+import SuperDeluxeRoomWithPrivatePool from "../assets/rooms/5.webp"; // Add more images if needed
+import SuperDeluxeRoomWithJaccuziTub from "../assets/rooms/9.webp"; // Add more images if needed
 
 const ExploreRoomsSection = () => {
   const navigate = useNavigate();

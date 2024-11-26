@@ -16,10 +16,10 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-import image1 from "../assets/rooms/2.jpg";
-import image2 from "../assets/rooms/7.jpg";
-import image3 from "../assets/rooms/8.jpg";
-import image4 from "../assets/rooms/5.jpg";
+import image1 from "../assets/rooms/5.webp";
+import image2 from "../assets/rooms/6.webp";
+import image3 from "../assets/rooms/7.webp";
+import image4 from "../assets/rooms/8.webp";
 
 import icon1 from "../assets/icons/double-bed.png";
 import icon2 from "../assets/icons/wi-fi.png";

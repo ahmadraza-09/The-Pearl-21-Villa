@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../css/hero-section.css";
-import Hero from "../assets/hero/hero.jpg";
+import Hero from "../assets/hero/hero.webp";
 import SkeletonHero from "./skeleton-hero"; // Import your skeleton loader component
 
 const HeroSection = () => {
