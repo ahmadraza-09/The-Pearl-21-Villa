@@ -7,6 +7,8 @@ import GalleryPage from './pages/gallerypage';
 import AboutPage from './pages/aboutpage';
 import RoomsPage from './pages/rooms-page';
 import Payment from './pages/paymentpage';
+import PrivacyPolicyPage from './pages/privacypolicypage';
+import CancellationPolicyPage from './pages/cancellationpolicypage';
 import PlacesToVisitPage from './pages/placestovisitpage'
 import SuperDeluxeRoomWithPrivatePoolPage from './pages/super-deluxe-with-private-pool-page';
 import SuperDeluxeRoomWithJaccuziTubPage from './pages/super-deluxe-room-with-jaccuzi-tub-page';
@@ -24,6 +26,8 @@ function App() {
           <Route path='/about' element={<AboutPage />} />
           <Route path='/rooms' element={<RoomsPage />} />
           <Route path='/payment' element={<Payment />} />
+          <Route path='/privacy-policy' element={<PrivacyPolicyPage />} />
+          <Route path='/cancellation-policy' element={<CancellationPolicyPage />} />
           <Route path='/places-to-visit' element={<PlacesToVisitPage />} />
           <Route path="/super-deluxe-room-with-balcony" element={<SuperDeluxeRoomWithBalconyPage />} />
           <Route path="/super-deluxe-with-private-pool" element={<SuperDeluxeRoomWithPrivatePoolPage />} />
